@@ -66,11 +66,16 @@ public class GameDisplay extends AppCompatActivity {
         this.gameStatusImage = findViewById(R.id.game_status_img);
         this.gameStatusImage.setImageResource(getGameStatusImage());
 
+        playAgainBTN.setOnClickListener(view -> playAgainButtonCLick());
+        setOnClickListener();
     }
 
-    private void setNextTurn() {
-        this.status = this.status == CurrentStatus.X_TURN ? CurrentStatus.O_TURN : CurrentStatus.X_TURN;
-        this.gameStatusImage.setImageResource(getGameStatusImage());
+    private void setOnClickListener() {
+        int childCount = this.gridLayout.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            ImageView imageView = (ImageView) gridLayout.getChildAt(i);
+            imageView.setOnClickListener(this::onCellClick);
+        }
     }
 
     public void onCellClick(View view) {
@@ -88,6 +93,11 @@ public class GameDisplay extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    private void setNextTurn() {
+        this.status = this.status == CurrentStatus.X_TURN ? CurrentStatus.O_TURN : CurrentStatus.X_TURN;
+        this.gameStatusImage.setImageResource(getGameStatusImage());
     }
 
     private void checkWinner() {
@@ -123,7 +133,7 @@ public class GameDisplay extends AppCompatActivity {
         }
     }
 
-    public void playAgainButtonCLick(View view) {
+    public void playAgainButtonCLick() {
         this.status = CurrentStatus.X_TURN;
         clearTheBoard();
         initBoard();

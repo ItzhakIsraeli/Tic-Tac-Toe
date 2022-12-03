@@ -36,7 +36,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -49,7 +48,6 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -59,7 +57,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -69,7 +66,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -79,7 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -89,7 +84,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -99,7 +93,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -109,7 +102,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -119,7 +111,6 @@
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:onClick="onCellClick"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/empty" />
 
@@ -132,7 +123,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:background="@drawable/blue_button"
-        android:onClick="playAgainButtonCLick"
         android:text="@string/PlayAgainButton"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
